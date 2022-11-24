@@ -1,0 +1,88 @@
+body {
+  margin:0;
+}
+
+.top-bar-menubutton {
+  width: 60px; 
+  height:100%;
+  float:left;
+  text-align:center; 
+    background-color: dodgerblue;
+  /* padding:15px 0; */
+  /* vertical-align: middle; */
+}
+
+.top-bar-search-div {
+  display: table;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left:50%; */
+  width: 60%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  /* align-content: center; */
+  /* padding:20px 0; */
+  background-color: red;
+  /* transform: translate(-50%, -50%) */
+  /* margin: auto; */
+  /* vertical-align: baseline; */
+}
+
+
+.top-bar-accountinfo-div {
+  width:20%;
+  float:left;
+  text-align: right;
+}
+
+.top-bar-div {
+  float: top;
+  background-color: aquamarine;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.catalog-div {
+  width: 100%;
+  height: max-content;
+  background-color: yellow;
+  padding:0 0;
+}
+
+.filter-list-div {
+  width: 20%;
+  float: left;
+  background-color: cadetblue;
+}
+
+.object-list-div {
+  width: 80%;
+  float: left;
+  background-color: bisque;
+}
+
+.search-form {
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.search-input {
+  width:700px;
+}
+
+.filter-list {
+  width: 20%;
+  float: left;
+  background-color: cadetblue;
+}
+
+
+.object-list {
+  width: 80%;
+  float: left;
+  background-color: bisque;
+}
