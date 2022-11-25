@@ -1,18 +1,22 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-
 import './style.css'
-import Catalog from './Catalog'
 import TopBar from './TopBar'
+import Menu from './Menu'
+
+import {useSelector} from 'react-redux'
+import Content from './Content'
 
 function App() {
+  const menu_state = useSelector(state => state.menu_state)
   return (
     <div>
       <TopBar/>
-      <Router>
-        <Routes>
-          <Route path='/' element={<Catalog/>}/>
-        </Routes>
-      </Router>
+      {menu_state === 1 ? 
+        <div>
+          <Menu/>
+          <Content/> 
+        </div>:
+        <Content/>}
+      
     </div>
   );
 }

@@ -1,5 +1,11 @@
+* {
+  /* border-width: 1px; */
+  font-family: sans-serif;
+}
+
 body {
   margin:0;
+  border-width: 1px;
 }
 
 .top-bar-menubutton {
@@ -7,7 +13,9 @@ body {
   height:100%;
   float:left;
   text-align:center; 
-    background-color: dodgerblue;
+  background-color: #1e90ff;
+  /* background: #1e90ff url('../resources/menubutton3.png'); */
+  /* background-size: 30px; */
   /* padding:15px 0; */
   /* vertical-align: middle; */
 }
@@ -17,13 +25,13 @@ body {
   /* position: absolute; */
   /* top: 50%; */
   /* left:50%; */
-  width: 60%;
+  width: 85%;
   height: 60px;
   float: left;
   text-align: center;
   /* align-content: center; */
   /* padding:20px 0; */
-  background-color: red;
+  /* background-color: red; */
   /* transform: translate(-50%, -50%) */
   /* margin: auto; */
   /* vertical-align: baseline; */
@@ -31,14 +39,14 @@ body {
 
 
 .top-bar-accountinfo-div {
-  width:20%;
+  width:10%;
   float:left;
   text-align: right;
 }
 
 .top-bar-div {
   float: top;
-  background-color: aquamarine;
+  background-color: #413f3f;
   width: 100%;
   height: 60px;
   padding: 0;
@@ -47,22 +55,31 @@ body {
 }
 
 .catalog-div {
+  /* display:block; */
   width: 100%;
-  height: max-content;
+  height: 100%;
   background-color: yellow;
-  padding:0 0;
+  /* padding:0 0; */
 }
 
 .filter-list-div {
-  width: 20%;
+  /* margin-left:15%; */
   float: left;
-  background-color: cadetblue;
+  width: 15%;
+  height: 100%;
+  /* height: max-content; */
+  border-right-style: groove;
+  /* border-bottom-style: groove; */
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
 }
 
 .object-list-div {
+  /* margin-left:400px; */
   width: 80%;
+  height: 100%;
   float: left;
-  background-color: bisque;
+  /* background-color: pink; */
 }
 
 .search-form {
@@ -71,18 +88,65 @@ body {
 }
 
 .search-input {
-  width:700px;
+  width: 900px;
+  height: 37px;
+  border-radius: 7px;
+  border-width: 0;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-input::placeholder {
+  padding: 0 5px;
 }
 
 .filter-list {
   width: 20%;
   float: left;
-  background-color: cadetblue;
+  background-color: white;
 }
 
-
 .object-list {
-  width: 80%;
+  width: 100%;
   float: left;
-  background-color: bisque;
+  /* background-color: pink; */
+  text-align: left;
+}
+
+.menu-div {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  float: left;
+  background-color: #413f3f;
+}
+
+.menu-element-div {
+  display: table;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+
+.menu-element-form {
+  width: 300px;
+  height: 50px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.menu-element-button {
+  width: 300px;
+  height: 50px;
+  background-color:#413f3f;
+  color:white;
+}
+
+.login-page-container {
+  text-align: center;
+}
+
+.login-page-form {
+
 }
