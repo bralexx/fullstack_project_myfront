@@ -11,19 +11,22 @@ const hardcoded_data = [
 function create_filter(filter_data) {
   if (filter_data.type === 'class_mul' || filter_data.type === 'class_single') {
     return (
-      <li key={filter_data.name + '_list_element'}>
-        <ClassFilter name={filter_data.name} type={filter_data.type} classes={filter_data.classes}/>
-      </li>
+      <ClassFilter name={filter_data.name} type={filter_data.type} classes={filter_data.classes}/>
     )
   }
 }
 
 function FilterList() {
   return (
-    <ul className='filter-list'>
-      {hardcoded_data.map(create_filter)}
-      <input type="submit" value="Submit"></input>
-    </ul>
+    <div id='filter-list-container'>
+      <div id='filter-list-title-container'> 
+        <p id='filter-list-title'>Filter list</p>
+      </div>
+      <form className='filter-list'>
+        {hardcoded_data.map(create_filter)}
+        <input id='filter-list-submit-button' type="submit" value="Apply filters"></input>
+      </form>
+    </div>
   );
 }
 

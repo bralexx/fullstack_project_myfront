@@ -1,5 +1,5 @@
 const hardcoded_data = [
-  {key:1, text:"here can be some object from the database"},
+  {key:1, text:"here can be any object from the database, but its frontend representation depends on database features"},
   {key:2, text:2},
   {key:3, text:3},
   {key:4, text:5},
