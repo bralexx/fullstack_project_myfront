@@ -1,0 +1,110 @@
+#root {
+  height:100%
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  height:100%
+}
+
+.content-container {
+  /* display: */
+  flex-grow: 1;
+}
+
+* {
+  border-width: 1px;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin:0;
+  border-width: 1px;
+  height:100%;
+}
+
+.top-bar-search-div {
+  display: table;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left:50%; */
+  width: 85%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  /* align-content: center; */
+  /* padding:20px 0; */
+  /* background-color: red; */
+  /* transform: translate(-50%, -50%) */
+  /* margin: auto; */
+  /* vertical-align: baseline; */
+}
+
+
+.top-bar-accountinfo-div {
+  width:10%;
+  float:left;
+  text-align: right;
+}
+
+.top-bar-div {
+  float: top;
+  background-color: #413f3f;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.catalog-div {
+  /* display:block; */
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  /* padding:0 0; */
+}
+
+.filter-list-div {
+  /* margin-left:15%; */
+  float: left;
+  width: 15%;
+  height: 100%;
+  /* height: max-content; */
+  border-right-style: groove;
+  /* border-bottom-style: groove; */
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+.object-list-div {
+  /* margin-left:400px; */
+  width: 80%;
+  height: 100%;
+  float: left;
+  /* background-color: pink; */
+}
+
+.menu-div {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  float: left;
+  background-color: #413f3f;
+}
+
+.menu-element-div {
+  display: table;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}

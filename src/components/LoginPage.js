@@ -2,11 +2,12 @@ function LoginPage() {
   return (
     <div className='login-page-container'>
       <form className='login-page-form'>
-        <label for='username'><b>Username</b></label>
-        <input type='text' name='username' placeholder='Enter username'/>
-        <label for='password'><b>Password</b></label>
-        <input type='text' name='password' placeholder='Enter password'/>
-        <input type='submit'/>
+        <text id='login-title'><bf>Log in</bf></text>
+        <label for='Username'><b>Username</b></label>
+        <input className='login-text-input' type='text' name='username' placeholder='Enter username'/>
+        <label for='Password'><b>Password</b></label>
+        <input className='login-text-input' type='text' name='password' placeholder='Enter password'/>
+        <input id='login-submit-button' type='submit' value='Log in'/>
       </form>
     </div>
   );

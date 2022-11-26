@@ -4,7 +4,7 @@ import LoginPage from './LoginPage'
 
 function Content() {
   return (
-    <div>
+    <div className='content-container'>
     <Router>
       <Routes>
         <Route path='/' element={<Catalog/>}/>

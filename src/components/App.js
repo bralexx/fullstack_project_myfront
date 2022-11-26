@@ -1,4 +1,5 @@
 import './style.css'
+import './container_styles.css'
 import TopBar from './TopBar'
 import Menu from './Menu'
 
@@ -8,7 +9,7 @@ import Content from './Content'
 function App() {
   const menu_state = useSelector(state => state.menu_state)
   return (
-    <div>
+    <div id='app-container'>
       <TopBar/>
       {menu_state === 1 ? 
         <div>
@@ -16,7 +17,6 @@ function App() {
           <Content/> 
         </div>:
         <Content/>}
-      
     </div>
   );
 }
