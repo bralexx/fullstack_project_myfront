@@ -92,14 +92,14 @@ body {
 }
 
 .filter-element-container {
-  position:relative;
+  /* position:relative; */
   width:100%;
     /* border-width: 5px; */
   /* border-style: dashed; */
 }
 
 .filter-element-container::before {
-  position: absolute;
+  /* position: absolute; */
   content: "";
   height: 1px;
   width: 50%;
