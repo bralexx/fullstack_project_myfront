@@ -1,14 +1,9 @@
 function AccountInfo() {
   return (
-    <div>
-      <ul style={{float:'right', backgroundColor:'grey'}}>
-        <li style={{float:'left', display:'inline-block'}}>
-          icon
-        </li>
-        <li style={{float:'left', display:'inline-block'}}>
-          username
-        </li>
-      </ul>
+    <div id='user-info-container'>
+      <img id='user-info-image' src='../resources/user_image.jpg' alt='user'/>
+      <p id='user-info-username'>username</p>
+      <button id='user-info-logout-button'>Log out</button>
     </div>
   );
 }
