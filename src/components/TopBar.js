@@ -16,9 +16,7 @@ function TopBar() {
       <div className='top-bar-search-div'> 
         <SearchForm/>
       </div>
-      <div className='top-bar-accountinfo-div'>
-        <AccountInfo/>
-      </div>
+      <AccountInfo/>
     </header>
   );
 }
