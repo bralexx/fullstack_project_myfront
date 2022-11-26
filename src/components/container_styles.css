@@ -1,24 +1,3 @@
-#root {
-  height:100%
-}
-
-:root {
-  --main-text-light-color: rgba(255, 255, 255, 0.849);
-  --main-blue-color: #1e90ff;
-  --light-border-color: rgba(255, 255, 255, 0.582);;
-}
-
-#app-container {
-  display: flex;
-  flex-direction: column;
-  height:100%
-}
-
-.content-container {
-  /* display: */
-  flex-grow: 1;
-}
-
 * {
   border-width: 1px;
   font-family: sans-serif;
@@ -29,6 +8,33 @@ body {
   margin:0;
   border-width: 1px;
   height:100%;
+}
+
+#root {
+  height:100%
+}
+
+:root {
+  --main-text-light-color: rgba(255, 255, 255, 0.849);
+  --main-blue-color: #1e90ff;
+  --main-blue-hover-color: #156fc9;
+  --main-blue-focus-color: #0a3764;
+  --light-border-color: rgba(255, 255, 255, 0.582);;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  height:100%
+}
+
+.content-container {
+  position:absolute;
+  z-index: 1;
+  top:60px;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 .top-bar-search-div {
@@ -56,16 +62,18 @@ body {
 }
 
 .top-bar-div {
-  float: top;
+  position: sticky;
+  display: flex;
+  flex-flow: row;
+  z-index: 4;
   background-color: #413f3f;
   width: 100%;
   height: 60px;
-  padding: 0;
-  top: 0;
-  left: 0;
 }
 
 .catalog-div {
+  display: flex;
+  flex-flow: row;
   /* display:block; */
   width: 100%;
   height: 100%;
@@ -74,11 +82,12 @@ body {
 }
 
 #filter-list-container {
+  flex-grow:1;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   /* margin-left:15%; */
-  float: left;
-  width: 15%;
+  /* float: left; */
+  /* width: 15%; */
   height: 100%;
   /* height: max-content; */
   border-right-style: groove;
@@ -126,18 +135,26 @@ body {
 
 .object-list-div {
   /* margin-left:400px; */
-  width: 80%;
+  /* width: 80%; */
   height: 100%;
-  float: left;
+  /* float: left; */
+  flex-grow:1;
   /* background-color: pink; */
 }
 
 .menu-div {
+  z-index: 4;
+  /* position: fixed; */
   position: absolute;
+  top:60px;
+  left:0;
+  bottom:0;
   width: 300px;
-  height: 100%;
-  float: left;
+  /* height: 100%; */
+  /* float: left; */
   background-color: #413f3f;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .menu-element-div {
@@ -152,4 +169,6 @@ body {
   justify-content: center;
   align-items: center;
   height:100%;
+  left:0;
+  bottom:0;
 }

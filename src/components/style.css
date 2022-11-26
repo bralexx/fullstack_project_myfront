@@ -1,15 +1,23 @@
 
-.top-bar-menubutton {
+#top-bar-menu-button {
   width: 60px; 
   height:100%;
   float:left;
   text-align:center; 
-  background-color: #1e90ff;
+  background-color: var(--main-blue-color);
   /* background: #1e90ff url('../resources/menubutton3.png'); */
   /* background-size: 30px; */
   /* padding:15px 0; */
   /* vertical-align: middle; */
 }
+
+#top-bar-menu-button:hover {
+  background-color: var(--main-blue-hover-color);
+}
+
+/* #top-bar-menu-button:focus {
+  background-color: var(--main-blue-focus-color);
+} */
 
 .search-form {
   display:table-cell;
@@ -17,16 +25,18 @@
 }
 
 .search-input {
-  width: 900px;
+  width: 60%;
+  max-width: 900px;
   height: 37px;
   border-radius: 7px;
   border-width: 0;
+  padding:10px;
 }
 .search-input:focus {
   outline: none;
 }
 .search-input::placeholder {
-  padding: 0 5px;
+  padding: 0 0px;
 }
 
 .filter-list {
@@ -60,8 +70,8 @@
 }
 
 .object-list {
-  width: 100%;
-  float: left;
+  /* width: 100%; */
+  /* float: left; */
   /* background-color: pink; */
   text-align: left;
 }
@@ -116,16 +126,16 @@
 #login-submit-button {
   width: 100%;
   height: 40px;
-  background-color: #04AA6D;
+  background-color: var(--main-blue-color);
   color: white; 
   border-radius: 5px;
   border-width: 0;
 }
 
 #login-submit-button:focus {
-  background-color: #007a4e;
+  background-color: var(--main-blue-focus-color);
 }
 
 #login-submit-button:hover {
-  background-color: #008353;
+  background-color: var(--main-blue-hover-color);
 }

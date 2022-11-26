@@ -5,7 +5,7 @@ function MenuButton() {
   let dispatch = useDispatch()
   let open_close_menu = () => dispatch(CMSAction);
   return (
-    <button className='top-bar-menubutton' onClick={open_close_menu}></button>
+    <button id='top-bar-menu-button' onClick={open_close_menu}></button>
   )
 }
 
