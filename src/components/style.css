@@ -4,6 +4,8 @@
   float:left;
   text-align:center; 
   background-color: var(--main-blue-color);
+  color: var(--main-text-light-color);
+  font-size: 40px
   /* background: #1e90ff url('../resources/menubutton3.png'); */
   /* background-size: 30px; */
   /* padding:15px 0; */
