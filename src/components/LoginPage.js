@@ -6,7 +6,7 @@ function LoginPage() {
         <label for='Username'><b>Username</b></label>
         <input className='login-text-input' type='text' name='username' placeholder='Enter username'/>
         <label for='Password'><b>Password</b></label>
-        <input className='login-text-input' type='text' name='password' placeholder='Enter password'/>
+        <input className='login-text-input' type='password' name='password' placeholder='Enter password'/>
         <input id='login-submit-button' type='submit' value='Log in'/>
       </form>
     </div>

@@ -96,9 +96,10 @@ body {
 
 .filter-element-container {
   /* position:relative; */
-  width:100%;
+  /* width:100%; */
     /* border-width: 5px; */
   /* border-style: dashed; */
+  border-width: 0;
 }
 
 .filter-element-container::before {

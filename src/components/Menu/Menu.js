@@ -3,6 +3,7 @@ import MenuElement from './MenuElement'
 const pages = [
   {href:'/', text:'Main object list'},
   {href:'/login_page/', text:'Login page'},
+  {href:'/create_post/', text:'Create post'},
 ]
 
 function Menu() {
